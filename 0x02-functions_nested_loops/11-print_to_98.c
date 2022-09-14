@@ -4,6 +4,8 @@
 /**
  * print_to_98 - prints all natural numbers from n to 98
  *
+ * @n: character to compare
+ *
  * Return: last digit of n
  *
  */
