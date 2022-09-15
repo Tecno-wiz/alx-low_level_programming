@@ -4,11 +4,12 @@
  * main - causes an infinite loop
  * Return: 0
  */
-int main(void)
+iiiiiiiint main(void)
 {
 	int i;
 
-	// printf("Infinite loop incoming :(\n");
+	// This causes the output to go into an infinite loop
+	printf("Infinite loop incoming :(\n");
 
 	i = 0;
 
