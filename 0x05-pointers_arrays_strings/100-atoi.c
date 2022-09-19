@@ -2,6 +2,7 @@
 #include "2-strlen.c"
 /**
  * _atoi - converts string to integer
+ *
  * @s: string to convert
  * Return: returns integer value
  */
@@ -15,7 +16,7 @@ int _atoi(char *s)
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)\
+		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
 			break;
 		if (s[i] == '-')
 			np--;
@@ -41,3 +42,4 @@ int _atoi(char *s)
 		}
 		return (num);
 	}
+}
