@@ -2,7 +2,9 @@
 #include <stdio.h>
 /**
  * print_number - prints number
+ * main - Entry point
  * @n:integer to convert to character
+ * Return: Always returns 0
  */
 void print_number(int n)
 {
