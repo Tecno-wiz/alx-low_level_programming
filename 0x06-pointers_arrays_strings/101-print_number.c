@@ -1,42 +1,28 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_number - prints number
- * main - Entry point
+ * print_number - prints an integer.
  * @n:integer to convert to character
- * Return: Always returns 0
+ * Return: void
  */
+
 void print_number(int n)
 {
-	unsigned int abs;
-	int mult = 1;
-	unsigned int abSCount;
-	int i;
-	int c = 0;
+	int divisor = 1, i, resp;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
 	if (n < 0)
 	{
 		_putchar('-');
-		n += 1;
 		n *= -1;
-		n++;
 	}
-	abs = n;
-	abSCount = n;
 
-	while (abSCount > 0)
+	for (i = 0; n / divisor > 9; i++, divisor *= 10)
+	;
+
+	for (; divisor >= 1; n %= divisor, divisor /= 10)
 	{
-		abSCount /= 10;
-		c++;
-	}
-	for (i = 0; i < c - 1; i++)
-	{
-		_putchar((abs / mult) + '0');
-		abs = abs % mult;
-		mult /= 10;
+		resp = n / divisor;
+		_putchar('0' + resp);
+
 	}
 }
