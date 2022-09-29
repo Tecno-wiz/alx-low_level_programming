@@ -11,5 +11,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int square(int n, int val);
+int p1(char *s, int l);
 
 #endif
